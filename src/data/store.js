@@ -99,7 +99,7 @@ const myData = reactive ({
 
         }
         ],
-    
+            
         squads: [
             {
                 ImgSmall: '1.png',
@@ -171,8 +171,9 @@ const myData = reactive ({
                 name: 'Shark Gaming',
                 state: 'italy'
             },
-        ]
+        ],
 
+        
 });
 
 export default myData;
