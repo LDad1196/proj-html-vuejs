@@ -98,12 +98,17 @@
 
             <div>
                 <ul class="banner-social">
-                    <li v-for="social in socials" class="my-2">
-                        <a :href="socials.social">
-                            <b>
-                                <svg>{{socials.urlSocial}}</svg>
-                            </b>
-                        </a>
+                    <li class="my-2">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li class="my-2">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li class="my-2">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li class="my-2">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     </li>
                 </ul>
             </div>
@@ -178,4 +183,7 @@
         text-align: center;
     }
     
+    .banner-social > li:hover {
+        background-color: #00AC4D;
+    }
 </style>
