@@ -19,6 +19,15 @@
                 {
                     text: "PAGES",
                     url: "#PAGES",
+                    subLinks: [
+                        "ABOUT US",
+                        "MATCHES",
+                        "TEAM",
+                        "SQUAD",
+                        "SQUAD DETAILS",
+                        "COMING SOON",
+                        "404"                    
+                    ]
                 },
                 {
                     text: "TOURNAMENT",
@@ -27,10 +36,19 @@
                 {
                     text: "SHOP",
                     url: "#SHOP",
+                    subLinks:[
+                        "SHOP PAGE",
+                        "SHOP DETAILS",
+                        "CART PAGE"                        
+                    ]
                 },
                 {
                     text: "BLOG",
                     url: "#BLOG",
+                    subLinks:[
+                        "BLOG PAGE",
+                        "BLOG SINGLE"                        
+                    ]
                 },
                 {
                     text: "CONTACT",
@@ -78,11 +96,11 @@
                     </ul>
                 </nav>
                 <div class="col-1 flex row justify-content-between m-0 p-0">
-                    <div class="col-6 rounded-5 bg-light my-size py-1">
+                    <div class="col-6 bg-light my-size shop-zone">
                         <a href="search" class="violet-c "><i class="fa-solid fa-magnifying-glass"></i></a>
                     </div>
-                    <div class="col-6 rounded-5 bg-light my-size py-1">
-                        <a href="bag" class="violet-c "><i class="fa-solid fa-bag-shopping"></i></a>
+                    <div class="col-6 bg-light my-size shop-zone">
+                        <a href="bag" class="violet-c"><i class="fa-solid fa-bag-shopping"></i></a>
                     </div>
                 </div>
             </div>
@@ -91,7 +109,7 @@
                 <h6>WELCOME TO RAXG</h6>
                 <h1 class="my-3">ARE YOU READY FOR YOUR NEXT CHALLENGE?</h1>
                 <ul class="flex row align-items-center justify-content-center py-4">
-                    <li class="col-2"><button type="button" class="btn btn-green">Read More</button></li>
+                    <li class="col-2"><button type="button" class="btn btn-green">Read More <i class="fa-solid fa-arrow-right"></i></button></li>
                     <li class="col-2"><button type="button" class="btn btn-green"><i class="fa-solid fa-circle-play"></i></button></li>
                 </ul>
             </div>
@@ -118,7 +136,7 @@
 
 <style scoped>
     .my-bg {
-        height: 90vh;
+        height: 100vh;
         background-image: url(../assets/banner1.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -136,10 +154,21 @@
         list-style-type: none;
     }
 
+    .hover:hover{
+        color: #00AC4D;
+    }
+
     li:nth-child(3) {
         width: 16.66666667%;
     }
     
+    .shop-zone {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        line-height: 45px;
+    }
+
     h1 {
         font-size: 5rem;
     }
@@ -155,6 +184,8 @@
     .violet-c {
         color: #333287;
     }
+
+    
 
     .my-size {
         width: 40px;
