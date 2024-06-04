@@ -82,19 +82,74 @@
 <template>
     <header class="my-bg">
         <div class="container">
+            <!-- Sezione Header -->
             <div class="flex row align-items-center py-3 px-0 w-100">
+                
+                <!-- Logo Section -->
                 <figure class="col-2 mx-0 px-0">
                     <img src="../assets/menulogo.png" class="img-fluid" alt="">
                 </figure>
+                
+                <!-- Nav section -->
                 <nav class="col-9 p-0">
-                    <ul class=" flex row m-0 p-0 px-2 w-100 justify-content-center">
-                        <li v-for="link in links" class="col-1 px-0 mx-0 ">
-                            <a :href="link.url" class="text-decoration-none hover">
-                                <b>{{link.text}}</b>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class=" flex row m-0 p-0 px-2 w-100 justify-content-center">
+                        <div class="dropdown col-1">
+                            <button class="btn dropdown-toggle text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                HOME
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Home One</button></li>
+                                <li><button class="dropdown-item" type="button">Home Two</button></li>
+                                <li><button class="dropdown-item" type="button">Home Three</button></li>
+                                <li><button class="dropdown-item" type="button">Home Four</button></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown col-1">
+                            <button class="btn dropdown-toggle text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PAGES
+                            </button>
+                            <ul class="dropdown-menu">
+                                    <li><button class="dropdown-item" type="button">About us</button></li>
+                                    <li><button class="dropdown-item" type="button">Matches</button></li>
+                                    <li><button class="dropdown-item" type="button">Team</button></li>
+                                    <li><button class="dropdown-item" type="button">Squad</button></li>
+                                    <li><button class="dropdown-item" type="button">Squad Details</button></li>
+                                    <li><button class="dropdown-item" type="button">404</button></li>
+                                </ul>
+                        </div>
+                        <div class="col-2">
+                            <button class="btn  text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                TOURNAMENT
+                            </button>
+                        </div>
+                        <div class="dropdown col-1">
+                            <button class="btn dropdown-toggle text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                SHOP
+                            </button>
+                            <ul class="dropdown-menu">
+                                    <li><button class="dropdown-item" type="button">Shop Page</button></li>
+                                    <li><button class="dropdown-item" type="button">Shop Details</button></li>
+                                    <li><button class="dropdown-item" type="button">Cart Page</button></li>
+                                </ul>
+                        </div>
+                        <div class="dropdown col-1">
+                            <button class="btn dropdown-toggle text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                BLOG
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Blog Page</button></li>
+                                <li><button class="dropdown-item" type="button">Blog Single</button></li>
+                            </ul>        
+                        </div>
+                        <div class="col-1">
+                            <button class="btn text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            CONTACT
+                            </button>
+                        </div>     
+                    </div>  
                 </nav>
+                
+                <!-- Sezione Shop -->
                 <div class="col-1 flex row justify-content-between m-0 p-0">
                     <div class="col-6 bg-light my-size shop-zone">
                         <a href="search" class="violet-c "><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -217,4 +272,37 @@
     .banner-social > li:hover {
         background-color: #00AC4D;
     }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .dropbtn {
+        background-color: #4d1c33;
+      }
 </style>

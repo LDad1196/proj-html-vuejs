@@ -1,10 +1,18 @@
 <script>
   import AppHeader from './components/AppHeader.vue';
+  import AppMain from './components/appMain.vue';
+  import AppMain4 from './components/AppMain4.vue';
+  import AppMain5 from './components/AppMain5.vue';
+  import AppMain6 from './components/AppMain6.vue';
   import store from './data/store.js';
 
   export default {
       components:{
         AppHeader,
+        AppMain,
+        AppMain4,
+        AppMain5,
+        AppMain6,
       },
   
 
@@ -26,6 +34,10 @@
 
 <template>
   <AppHeader />
+  <appMain/>
+  <AppMain4 />
+  <AppMain5 />
+  <AppMain6 />
 </template>
 
 <style scoped>

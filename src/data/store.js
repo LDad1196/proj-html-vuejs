@@ -176,4 +176,51 @@ const myData = reactive ({
         
 });
 
+var nav = new Vue({
+    el: '#nav',
+    data: {
+        isOpen: false,
+        items: [
+            {
+                url: '#home',
+                name: 'Home'
+            },
+            {
+                url: '#about',
+                name: 'About'
+            },
+            {
+                url: '#service',
+                name: 'Service',
+                children: [
+                    {
+                        url: '#service1',
+                        name: 'Service1'
+                    },
+                    {
+                        url: '#service2',
+                        name: 'Service2'
+                    },
+                    {
+                        url: '#service3',
+                        name: 'Service3'
+                    },
+                ]
+            },
+            {
+                url: '#contact',
+                name: 'Contact'
+            }
+        ]
+    },
+
+    methods: {
+        mouseover: function () {
+            this.isOpen = true;
+        },
+        mouseleave: function () {
+            this.isOpen = false;
+        }
+    }
+});
 export default myData;
