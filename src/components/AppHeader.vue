@@ -81,109 +81,135 @@
 
 <template>
     <header class="my-bg">
-        <div class="container">
-            <!-- Sezione Header -->
-            <div class="flex row align-items-center py-3 px-0 w-100">
+        <!-- Sezione nav bar -->
+        <div class="flex row align-items-center justify-content-center py-3 px-0 w-100 my-fixed">
                 
-                <!-- Logo Section -->
-                <figure class="col-2 mx-0 px-0">
-                    <img src="../assets/menulogo.png" class="img-fluid" alt="">
-                </figure>
-                
-                <!-- Nav section -->
-                <nav class="col-9 p-0">
-                    <div class=" flex row m-0 p-0 px-2 w-100 justify-content-center">
-                        <div class="dropdown col-1">
-                            <button class="btn dropdown-toggle text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                HOME
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><button class="dropdown-item" type="button">Home One</button></li>
-                                <li><button class="dropdown-item" type="button">Home Two</button></li>
-                                <li><button class="dropdown-item" type="button">Home Three</button></li>
-                                <li><button class="dropdown-item" type="button">Home Four</button></li>
-                            </ul>
-                        </div>
-                        <div class="dropdown col-1">
-                            <button class="btn dropdown-toggle text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                PAGES
-                            </button>
-                            <ul class="dropdown-menu">
-                                    <li><button class="dropdown-item" type="button">About us</button></li>
-                                    <li><button class="dropdown-item" type="button">Matches</button></li>
-                                    <li><button class="dropdown-item" type="button">Team</button></li>
-                                    <li><button class="dropdown-item" type="button">Squad</button></li>
-                                    <li><button class="dropdown-item" type="button">Squad Details</button></li>
-                                    <li><button class="dropdown-item" type="button">404</button></li>
-                                </ul>
-                        </div>
-                        <div class="col-2">
-                            <button class="btn  text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                TOURNAMENT
-                            </button>
-                        </div>
-                        <div class="dropdown col-1">
-                            <button class="btn dropdown-toggle text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                SHOP
-                            </button>
-                            <ul class="dropdown-menu">
-                                    <li><button class="dropdown-item" type="button">Shop Page</button></li>
-                                    <li><button class="dropdown-item" type="button">Shop Details</button></li>
-                                    <li><button class="dropdown-item" type="button">Cart Page</button></li>
-                                </ul>
-                        </div>
-                        <div class="dropdown col-1">
-                            <button class="btn dropdown-toggle text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                BLOG
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><button class="dropdown-item" type="button">Blog Page</button></li>
-                                <li><button class="dropdown-item" type="button">Blog Single</button></li>
-                            </ul>        
-                        </div>
-                        <div class="col-1">
-                            <button class="btn text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            CONTACT
-                            </button>
-                        </div>     
-                    </div>  
-                </nav>
-                
-                <!-- Sezione Shop -->
-                <div class="col-1 flex row justify-content-between m-0 p-0">
-                    <div class="col-6">
-                        <div class="btn-group dropstart">
-                            <button type="button" class="btn bg-light my-size shop-zone rounded-5" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-magnifying-glass violet-c"></i>
-                            </button>
-                            <ul class="dropdown-menu transformp m-2">
-                                <li><input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                </li>
-                            </ul>
-                          </div>
+            <!-- Logo Section -->
+            <figure class="col-1 mx-0 px-0">
+                <img src="../assets/menulogo.png" class="img-fluid" alt="">
+            </figure>
+            
+            <!-- Nav section -->
+            <nav class="col-4 p-0">
+                <div class=" flex row m-0 p-0 px-2 w-100 justify-content-center">
+                    <div class="dropdown col-1">
+                        <button class="btn dropdown-toggle text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            HOME
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" type="button">Home One</button></li>
+                            <li><button class="dropdown-item" type="button">Home Two</button></li>
+                            <li><button class="dropdown-item" type="button">Home Three</button></li>
+                            <li><button class="dropdown-item" type="button">Home Four</button></li>
+                        </ul>
                     </div>
-                    <div class="col-6">
-                        <div class="btn-group dropstart">
-                            <button type="button" class="btn bg-light my-size shop-zone rounded-5" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-bag-shopping violet-c"></i>
-                            </button>
-                            <ul class="dropdown-menu m-2">
-                                <li></li>
+                    <div class="dropdown col-1">
+                        <button class="btn dropdown-toggle text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PAGES
+                        </button>
+                        <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">About us</button></li>
+                                <li><button class="dropdown-item" type="button">Matches</button></li>
+                                <li><button class="dropdown-item" type="button">Team</button></li>
+                                <li><button class="dropdown-item" type="button">Squad</button></li>
+                                <li><button class="dropdown-item" type="button">Squad Details</button></li>
+                                <li><button class="dropdown-item" type="button">404</button></li>
                             </ul>
-                          </div>
                     </div>
+                    <div class="col-2">
+                        <button class="btn  text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            TOURNAMENT
+                        </button>
+                    </div>
+                    <div class="dropdown col-1">
+                        <button class="btn dropdown-toggle text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            SHOP
+                        </button>
+                        <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Shop Page</button></li>
+                                <li><button class="dropdown-item" type="button">Shop Details</button></li>
+                                <li><button class="dropdown-item" type="button">Cart Page</button></li>
+                            </ul>
+                    </div>
+                    <div class="dropdown col-1">
+                        <button class="btn dropdown-toggle text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            BLOG
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" type="button">Blog Page</button></li>
+                            <li><button class="dropdown-item" type="button">Blog Single</button></li>
+                        </ul>        
+                    </div>
+                    <div class="col-1">
+                        <button class="btn text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        CONTACT
+                        </button>
+                    </div>     
+                </div>  
+            </nav>
+            
+            <!-- Sezione Shop -->
+            <div class="col-1 flex row justify-content-between m-0 p-0">
+                <div class="col-6">
+                    <div class="btn-group dropstart">
+                        <button type="button" class="btn bg-light my-size shop-zone rounded-5" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-magnifying-glass violet-c"></i>
+                        </button>
+                        <ul class="dropdown-menu transformp m-2">
+                            <li><input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            </li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-6">
+                    <div class="btn-group dropstart">
+                        <button type="button" class="btn bg-light my-size shop-zone rounded-5" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bag-shopping violet-c"></i>
+                        </button>
+                        <ul class="dropdown-menu m-2">
+                            <li></li>
+                        </ul>
+                      </div>
                 </div>
             </div>
-
-            <div class="text-center myp ">
-                <h6>WELCOME TO RAXG</h6>
-                <h1 class="my-3">ARE YOU READY FOR YOUR NEXT CHALLENGE?</h1>
-                <ul class="flex row align-items-center justify-content-center py-4">
-                    <li class="col-2"><button type="button" class="btn btn-green">Read More <i class="fa-solid fa-arrow-right"></i></button></li>
-                    <li class="col-2"><button type="button" class="btn btn-green"><i class="fa-solid fa-circle-play"></i></button></li>
-                </ul>
+        </div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item carousel-image bg-img-1 active">
+                <div class="text-center myp container">
+                    <h6>WELCOME TO RAXG</h6>
+                    <h1 class="my-3">ARE YOU READY FOR YOUR NEXT CHALLENGE?</h1>
+                    <ul class="flex row align-items-center justify-content-center py-4">
+                        <li class="col-2"><button type="button" class="btn btn-green">Read More <i class="fa-solid fa-arrow-right"></i></button></li>
+                        <li class="col-2"><button type="button" class="btn btn-green"><i class="fa-solid fa-circle-play"></i></button></li>
+                    </ul>
+                </div>
+              </div>
+              <div class="carousel-item carousel-image bg-img-2">
+                <div class="text-center myp container">
+                    <h6>WELCOME TO RAXG</h6>
+                    <h1 class="my-3">ARE YOU READY FOR YOUR NEXT PERFORMANCE?</h1>
+                    <ul class="flex row align-items-center justify-content-center py-4">
+                        <li class="col-2"><button type="button" class="btn btn-green">Read More <i class="fa-solid fa-arrow-right"></i></button></li>
+                        <li class="col-2"><button type="button" class="btn btn-green"><i class="fa-solid fa-circle-play"></i></button></li>
+                    </ul>
+                </div>
+              </div>
+              <div class="carousel-item carousel-image bg-img-3">
+                <div class="text-center myp container">
+                    <h6>WELCOME TO RAXG</h6>
+                    <h1 class="my-3">ARE YOU READY FOR YOUR NEXT BEST?</h1>
+                    <ul class="flex row align-items-center justify-content-center py-4">
+                        <li class="col-2"><button type="button" class="btn btn-green">Read More <i class="fa-solid fa-arrow-right"></i></button></li>
+                        <li class="col-2"><button type="button" class="btn btn-green"><i class="fa-solid fa-circle-play"></i></button></li>
+                    </ul>
+                </div>
+              </div>
             </div>
-
+          </div>
+        
+        <div class="container position-absolute my-con">
+            
             <div>
                 <ul class="banner-social">
                     <li class="my-2">
@@ -206,20 +232,47 @@
 
 <style scoped>
     .my-bg {
-        height: 100vh;
-        background-image: url(../assets/banner1.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
         color: white;
     }
     
+    .my-con {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        translate: -50% 0;
+    }
+    .bg-img-1 {
+        background-image: url(../assets/banner1.png);
+      }
+    
+      .bg-img-2 {
+        background-image: url(../assets/bg1.png);
+      }
+    
+      .bg-img-3 {
+        background-image: url(../assets/bg2.png);
+      }
+    
+      .carousel-image {
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        z-index: -1;
+      }
+
     a {
         text-decoration: none;
         color: white;
         
     }
     
+    .my-fixed {
+        position: fixed;
+        top: 0;
+        z-index: 3;
+    }
+
     li {
         list-style-type: none;
     }
@@ -248,7 +301,7 @@
     }
 
     .myp {
-        padding-top: 5rem;
+        padding-top: 18rem;
     }
 
     .violet-c {
@@ -270,9 +323,8 @@
 
     .banner-social {
         position: absolute;
-        top: 45%;
-        left: 10%;
-        transform: translate(-50%, -50%);
+        left: -20%;
+        transform: translate(-50%, 125%);
     }
 
     .banner-social > li {
@@ -287,37 +339,4 @@
     .banner-social > li:hover {
         background-color: #00AC4D;
     }
-
-    .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-      
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-      }
-      
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-      
-      .dropdown-content a:hover {
-        background-color: #ddd;
-      }
-      
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-      
-      .dropdown:hover .dropbtn {
-        background-color: #4d1c33;
-      }
 </style>
