@@ -5,76 +5,7 @@
         data() {
             return {
                 store,
-                links: [
-                {
-                    text: "HOME",
-                    url: "#HOME",
-                    subLinks:[
-                        "HOME ONE",
-                        "HOME TWO",
-                        "HOME THREE",
-                        "HOME FOUR"
-                    ]
-                },
-                {
-                    text: "PAGES",
-                    url: "#PAGES",
-                    subLinks: [
-                        "ABOUT US",
-                        "MATCHES",
-                        "TEAM",
-                        "SQUAD",
-                        "SQUAD DETAILS",
-                        "COMING SOON",
-                        "404"                    
-                    ]
-                },
-                {
-                    text: "TOURNAMENT",
-                    url: "#TOURNAMENT",
-                },
-                {
-                    text: "SHOP",
-                    url: "#SHOP",
-                    subLinks:[
-                        "SHOP PAGE",
-                        "SHOP DETAILS",
-                        "CART PAGE"                        
-                    ]
-                },
-                {
-                    text: "BLOG",
-                    url: "#BLOG",
-                    subLinks:[
-                        "BLOG PAGE",
-                        "BLOG SINGLE"                        
-                    ]
-                },
-                {
-                    text: "CONTACT",
-                    url: "#CONTACT",
-                }
-            ],
-
-            socials:[
-                {
-                    social: "Facebook",
-                    urlSocial: "../assets/image(4).svg"
-                },
-                {
-                    social: "Twitter",
-                    urlSocial: "../assets/image(5).svg"
-                },
-                {
-                    social: "Linkedin",
-                    urlSocial: "../assets/image(6).svg"
-                },
-                {
-                    social: "Instagram",
-                    urlSocial: "../assets/image(7).svg"
-                },
-            ],
-            }
+            }        
         }
     }
 </script>
@@ -90,33 +21,33 @@
             </figure>
             
             <!-- Nav section -->
-            <nav class="col-4 p-0">
+            <nav class="col-5 p-0">
                 <div class=" flex row m-0 p-0 px-2 w-100 justify-content-center">
                     <div class="dropdown col-1">
                         <button class="btn dropdown-toggle text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             HOME
                         </button>
-                        <ul class="dropdown-menu">
-                            <li><button class="dropdown-item" type="button">Home One</button></li>
-                            <li><button class="dropdown-item" type="button">Home Two</button></li>
-                            <li><button class="dropdown-item" type="button">Home Three</button></li>
-                            <li><button class="dropdown-item" type="button">Home Four</button></li>
+                        <ul class="dropdown-menu bg-violet">
+                            <li><button class="dropdown-item text-green" type="button">Home One</button></li>
+                            <li><button class="dropdown-item text-green" type="button">Home Two</button></li>
+                            <li><button class="dropdown-item text-green" type="button">Home Three</button></li>
+                            <li><button class="dropdown-item text-green" type="button">Home Four</button></li>
                         </ul>
                     </div>
                     <div class="dropdown col-1">
                         <button class="btn dropdown-toggle text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             PAGES
                         </button>
-                        <ul class="dropdown-menu">
-                                <li><button class="dropdown-item" type="button">About us</button></li>
-                                <li><button class="dropdown-item" type="button">Matches</button></li>
-                                <li><button class="dropdown-item" type="button">Team</button></li>
-                                <li><button class="dropdown-item" type="button">Squad</button></li>
-                                <li><button class="dropdown-item" type="button">Squad Details</button></li>
-                                <li><button class="dropdown-item" type="button">404</button></li>
+                        <ul class="dropdown-menu bg-violet">
+                                <li><button class="dropdown-item text-green" type="button">About us</button></li>
+                                <li><button class="dropdown-item text-green" type="button">Matches</button></li>
+                                <li><button class="dropdown-item text-green" type="button">Team</button></li>
+                                <li><button class="dropdown-item text-green" type="button">Squad</button></li>
+                                <li><button class="dropdown-item text-green" type="button">Squad Details</button></li>
+                                <li><button class="dropdown-item text-green" type="button">404</button></li>
                             </ul>
                     </div>
-                    <div class="col-2">
+                    <div class="my-width">
                         <button class="btn  text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             TOURNAMENT
                         </button>
@@ -125,19 +56,19 @@
                         <button class="btn dropdown-toggle text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             SHOP
                         </button>
-                        <ul class="dropdown-menu">
-                                <li><button class="dropdown-item" type="button">Shop Page</button></li>
-                                <li><button class="dropdown-item" type="button">Shop Details</button></li>
-                                <li><button class="dropdown-item" type="button">Cart Page</button></li>
+                        <ul class="dropdown-menu bg-violet">
+                                <li><button class="dropdown-item text-green" type="button">Shop Page</button></li>
+                                <li><button class="dropdown-item text-green" type="button">Shop Details</button></li>
+                                <li><button class="dropdown-item text-green" type="button">Cart Page</button></li>
                             </ul>
                     </div>
                     <div class="dropdown col-1">
                         <button class="btn dropdown-toggle text-light border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             BLOG
                         </button>
-                        <ul class="dropdown-menu">
-                            <li><button class="dropdown-item" type="button">Blog Page</button></li>
-                            <li><button class="dropdown-item" type="button">Blog Single</button></li>
+                        <ul class="dropdown-menu bg-violet">
+                            <li><button class="dropdown-item text-green" type="button">Blog Page</button></li>
+                            <li><button class="dropdown-item text-green" type="button">Blog Single</button></li>
                         </ul>        
                     </div>
                     <div class="col-1">
@@ -166,7 +97,7 @@
                         <button type="button" class="btn bg-light my-size shop-zone rounded-5" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-bag-shopping violet-c"></i>
                         </button>
-                        <ul class="dropdown-menu m-2">
+                        <ul class="dropdown-menu m-2 bg-violet">
                             <li></li>
                         </ul>
                       </div>
@@ -276,13 +207,11 @@
     li {
         list-style-type: none;
     }
-
+    .my-width {
+        width: 12.666667%;
+    }
     .hover:hover{
         color: #00AC4D;
-    }
-
-    li:nth-child(3) {
-        width: 16.66666667%;
     }
     
     .shop-zone {
@@ -300,6 +229,9 @@
         color: #00AC4D;
     }
 
+    .text-green {
+        color: #00AC4D;
+    }
     .myp {
         padding-top: 18rem;
     }
@@ -308,7 +240,10 @@
         color: #333287;
     }
 
-    
+
+    .bg-violet {
+        background-color: #202046;
+    }
 
     .my-size {
         width: 40px;
