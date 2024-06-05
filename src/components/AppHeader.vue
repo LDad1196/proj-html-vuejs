@@ -151,11 +151,26 @@
                 
                 <!-- Sezione Shop -->
                 <div class="col-1 flex row justify-content-between m-0 p-0">
-                    <div class="col-6 bg-light my-size shop-zone">
-                        <a href="search" class="violet-c "><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <div class="col-6">
+                        <div class="btn-group dropstart">
+                            <button type="button" class="btn bg-light my-size shop-zone rounded-5" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-magnifying-glass violet-c"></i>
+                            </button>
+                            <ul class="dropdown-menu transformp m-2">
+                                <li><input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                </li>
+                            </ul>
+                          </div>
                     </div>
-                    <div class="col-6 bg-light my-size shop-zone">
-                        <a href="bag" class="violet-c"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <div class="col-6">
+                        <div class="btn-group dropstart">
+                            <button type="button" class="btn bg-light my-size shop-zone rounded-5" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bag-shopping violet-c"></i>
+                            </button>
+                            <ul class="dropdown-menu m-2">
+                                <li></li>
+                            </ul>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -221,7 +236,7 @@
         width: 45px;
         height: 45px;
         border-radius: 50%;
-        line-height: 45px;
+        line-height: 50%;
     }
 
     h1 {
@@ -233,7 +248,7 @@
     }
 
     .myp {
-        padding-top: 20rem;
+        padding-top: 5rem;
     }
 
     .violet-c {
