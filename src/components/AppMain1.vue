@@ -160,12 +160,12 @@ li{
 }
 .container_sezione1{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-color: rgb(48, 48, 101);
 }
 .container_squad{
     
-    height: 10rem;
+    height: 15rem;
     background-color: blueviolet;
 }
 .card_squad{
@@ -193,14 +193,15 @@ li{
 }
 /* SEZIONE 2  */
 .container_sezione2{
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     background-image: url(../assets/Vector.png);
     background-color: rgb(47, 47, 86) ;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .cardGame{
     width: 17rem ;
@@ -218,13 +219,15 @@ li{
 }
 /* sezione TRE */
 .container_sezione3 {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-image: url(../assets/v-bg.png);
     background-color: rgb(47, 47, 86) ;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .containerVideo{
     aspect-ratio: 4/3;

@@ -50,14 +50,14 @@ export default {
     <header class="my-bg">
         <!-- Sezione nav bar -->
         <div class="flex row align-items-center justify-content-center py-3 px-0 w-100 my-fixed" :class="{ 'navbar-fixed': isFixed}">
-                
+            <div class="col-1"></div>    
             <!-- Logo Section -->
-            <figure class="col-1 mx-0 px-0">
+            <figure class="col-1 col-l-1 col-md-2 mx-0 px-0">
                 <img src="../assets/menulogo.png" class="img-fluid" alt="">
             </figure>
             
             <!-- Nav section -->
-            <nav class="col-5 p-0">
+            <nav class="col-6 col-l-4 col-md-7 p-0">
                 <div class=" flex row m-0 p-0 px-2 w-100 justify-content-center">
                     <div class="dropdown col-1">
                         <button class="btn dropdown-toggle text-light border-none hover" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -116,8 +116,8 @@ export default {
             </nav>
             
             <!-- Sezione Shop -->
-            <div class="col-1 flex row justify-content-center m-0 p-0">
-                <div class="col-6">
+            <div class="col-1 col-l-1 col-md-2 flex row justify-content-center m-0 p-0">
+                <div class="col-3">
                     <div class="btn-group dropstart">
                         <button type="button" class="btn bg-light my-size shop-zone rounded-5" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-magnifying-glass violet-c"></i>
@@ -128,7 +128,7 @@ export default {
                         </ul>
                       </div>
                 </div>
-                <div class="dropdown col-6">
+                <div class="dropdown col-3">
                     <button type="button" class="btn bg-light my-size shop-zone rounded-5" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-bag-shopping violet-c"></i>
                     </button>
@@ -148,7 +148,8 @@ export default {
                         </div>
                     </div>
                     </div>
-                  </div>
+                </div>
+                <div class="col-1"></div>
             </div>
         </div>
         
@@ -234,7 +235,7 @@ export default {
       }
     
       .carousel-image {
-        height: 100vh;
+        height: 80vh;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
@@ -288,7 +289,7 @@ export default {
         color: #00AC4D;
     }
     .myp {
-        padding-top: 18rem;
+        padding-top: 15rem;
     }
 
     .violet-c {
@@ -320,7 +321,7 @@ export default {
 
     .banner-social {
         position: absolute;
-        left: -20%;
+        left: -10%;
         transform: translate(-50%, 150%);
     }
 
