@@ -1,6 +1,8 @@
 <script >
 import store from "../data/store.js"
-import AppMainTop from "./AppMainTop.vue"
+import AppMainTop from "./AppMainTop.vue";
+console.log("ciao")
+
 
 export default{
     components:{
@@ -37,31 +39,51 @@ export default{
             let risultato = new URL(`../assets/${gameImg}`, import.meta.url);
             return risultato.href;
         }
-    }
+    },
+    
   
 }
 </script>
 
 
 <template>
+    <!-- sezione UNO -->
     <div class=" container_sezione1 ">
-        <div class="container container_squad rounded d-flex">
-            <div class="card_squad col-2">
+        <div class="container container_squad rounded d-flex " id="drag">
+            <div class="card_squad col-2 d-flex justify-content-center align-items-center">
                 <img src="../assets/1.png" alt="" width="calc(100%/6)">
             </div>
-            <div class="card_squad col-2">
+            <div class="card_squad col-2 d-flex justify-content-center align-items-center">
                 <img src="../assets/2.png" alt="" width="calc(100%/6)">
             </div>
-            <div class="card_squad col-2">
+            <div class="card_squad col-2 d-flex justify-content-center align-items-center">
                 <img src="../assets/3.png" alt="" width="calc(100%/6)">
             </div>
-            <div class="card_squad col-2">
+            <div class="card_squad col-2 d-flex justify-content-center align-items-center">
                 <img src="../assets/4.png" alt="" width="calc(100%/6)">
             </div>
-            <div class="card_squad col-2">
+            <div class="card_squad col-2 d-flex justify-content-center align-items-center">
                 <img src="../assets/5.png" alt="" width="calc(100%/6)">
             </div>
-            <div class="card_squad col-2">
+            <div class="card_squad col-2 d-flex justify-content-center align-items-center">
+                <img src="../assets/6.png" alt="" width="calc(100%/6)">
+            </div>
+            <div class="card_squad col-2 d-flex justify-content-center align-items-center">
+                <img src="../assets/1.png" alt="" width="calc(100%/6)">
+            </div>
+            <div class="card_squad col-2 d-flex justify-content-center align-items-center">
+                <img src="../assets/2.png" alt="" width="calc(100%/6)">
+            </div>
+            <div class="card_squad col-2 d-flex justify-content-center align-items-center">
+                <img src="../assets/3.png" alt="" width="calc(100%/6)">
+            </div>
+            <div class="card_squad col-2 d-flex justify-content-center align-items-center">
+                <img src="../assets/4.png" alt="" width="calc(100%/6)">
+            </div>
+            <div class="card_squad col-2 d-flex justify-content-center align-items-center">
+                <img src="../assets/5.png" alt="" width="calc(100%/6)">
+            </div>
+            <div class="card_squad col-2 d-flex justify-content-center align-items-center">
                 <img src="../assets/6.png" alt="" width="calc(100%/6)">
             </div>
         </div>
@@ -145,7 +167,8 @@ export default{
         <div class="container d-flex align-items-center">
             <div class="containerVideo col-6 d-flex flex-column justify-content-center align-items-center  ">
                 <div class="play p-4 bg-">
-                    <i class="fa-solid fa-play text-light fs-4"></i>
+                    <!-- <i class="fa-solid fa-play text-light fs-4"></i> -->
+                    <a href="#" id="a"><i class="fas fa-play"></i></a><span></span>
                 </div>
                 <p class="text-light mt-2"><b>Call Of Deauty</b></p>
             </div>
@@ -185,7 +208,18 @@ export default{
         </div>
     </div>
 </template>
-<style>
+<style scoped>
+ #drag {
+     cursor: move; 
+     cursor: grab;
+     cursor: -moz-grab;
+     cursor: -webkit-grab;
+ }
+ #drag:active {
+     cursor: grabbing;
+     cursor: -moz-grabbing;
+     cursor: -webkit-grabbing;
+ }
 .h{
     width:20rem ;
     border-radius:20px
@@ -217,19 +251,29 @@ li{
 }
 .container_sezione1{
     width: 100%;
-    min-height: 100vh;
+    min-height: 120vh;
     height: fit-content;
-    background-color: rgb(24, 25, 53)
+    background-color: rgb(24, 25, 53);
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 .container_squad{
-    margin-top: -100px;
+    position: absolute;
+    top:1%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 2;
     height: 10rem;
     background-color: rgb(33, 32, 71);
+    /* scrollbar-: 0; */
+    overflow-x: scroll;
+    scrollbar-width: none;
+    /* cursor:grabbing; */
 }
-.card_squad{
-    
-    height: 100%;
-}
+/* .container_squad::-webkit-scrollbar {
+    display: none;
+} */
 
 /* sezione uno-due */
 .container_img{
@@ -255,8 +299,8 @@ li{
 }
 /* SEZIONE 2  */
 .container_sezione2{
-    min-height: 100vh;
-    height: fit-content;
+    min-height: 130vh;
+    
     width: 100%;
     background-image: url(../assets/Vector.png);
     background-color: rgb(25, 24, 67);
@@ -289,11 +333,14 @@ li{
 }
 /* sezione TRE */
 .container_sezione3 {
-    height: 100vh;
-    height: fit-content;
     
+    height: 110vh;
+    /* padding-top:5rem;
+    padding-bottom:5rem; */
     width: 100%;
-    background-image: url(../assets/v-bg.png);
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../assets/v-bg.png) ;
+
+    /* background-image: url(../assets/v-bg.png); */
     background-color: rgb(47, 47, 86) ;
     display: flex;
     justify-content: center;
@@ -313,8 +360,8 @@ li{
 }
 .play{
     aspect-ratio: 1/1;
-    width: 5rem;
-    background-color: rgb(43, 136, 68);
+    /* width: 5rem; */
+    /* background-color: rgb(43, 136, 68); */
     border-radius: 50% ;
     display: flex;
     justify-content: center;
@@ -329,4 +376,69 @@ li{
     margin: 1rem;
     color: white;
 }
+#a {
+            text-decoration: none;
+            aspect-ratio: 1/1;
+            width: 5rem;
+            background-color: rgb(43, 136, 68);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: x-large;
+            color: aliceblue;
+            border-radius: 50%;
+            padding: 15px;
+            position: relative;
+        }
+
+        #a::after {
+            position: absolute;
+            content: '';
+            bottom: -7px;
+            top: -7px;
+            left: -7px;
+            right: -7px;
+            background-color: transparent;
+            border-radius: 50%;
+            border: 4px solid 4px solid #20d12f;
+            margin: 0px;
+            opacity: 1;
+            transform-origin: center;
+            animation: anim 800ms linear infinite;
+        }
+
+        #a::before {
+            position: absolute;
+            content: '';
+            bottom: -7px;
+            top: -7px;
+            left: -7px;
+            right: -7px;
+            background-color: transparent;
+            border-radius: 50%;
+            border: 4px solid #20d12f;
+            margin: 0px;
+            opacity: 0.8;
+            transform-origin: center;
+            animation: anim 1000ms linear 1000ms infinite;
+        }
+
+        @keyframes anim {
+            from {
+                margin: 0px;
+                opacity: 1;
+            }
+
+            to {
+                margin: -15px;
+                opacity: 0;
+            }
+        }
+
+        /* span {
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: 600;
+            margin-left: 20px;
+        }  */
 </style>
